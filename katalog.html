@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katalog Hardware - Dynexa Global Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .glow-tech {
+      font-family: 'Orbitron', sans-serif;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      text-shadow:
+        0 0 2px #00f0ff55,
+        0 0 4px #00f0ff33,
+        0 0 6px #00f0ff22;
+    }
+
+    .service-card {
+      background: rgba(40, 40, 40, 0.7);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: 0 0 25px rgba(128, 0, 255, 0.2);
+      color: #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 1px solid rgba(100, 100, 100, 0.3);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 text-white shadow-lg fixed top-0 w-full z-50">
+    <div class="text-xl font-bold glow-tech">Dynexa</div>
+    <ul class="flex space-x-6 text-sm font-semibold">
+      <li><a href="index.html" class="hover:text-cyan-400">Beranda</a></li>
+      <li><a href="layanan.html" class="hover:text-cyan-400">Layanan</a></li>
+      <li><a href="katalog.html" class="hover:text-cyan-400">Katalog</a></li>
+      <li><a href="kontak.html" class="hover:text-cyan-400">Kontak</a></li>
+    </ul>
+  </nav>
+  <div class="pt-20"></div>
+
+  <!-- Judul Katalog -->
+  <section class="py-12 text-center" data-aos="fade-down">
+    <h1 class="glow-tech text-4xl md:text-5xl mb-4">Katalog Produk Hardware</h1>
+    <p class="text-lg text-gray-300 max-w-3xl mx-auto">Kami menjual berbagai produk hardware komputer baik satuan maupun bundling dengan harga bersaing.</p>
+  </section>
+
+  <!-- Daftar Produk -->
+  <section class="py-10 px-6 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Produk 1 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/keyboard_gaming.png" alt="Keyboard" class="rounded mb-2">
+        <h3 class="text-lg font-bold">Keyboard Gaming Battlefire K65M</h3>
+        <p class="text-sm">Gaming Keyboard 68 Keys Layout| 17 LED Mode Effect</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp210.000</p>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/mouse_wireless.png" alt="Mouse" class="rounded mb-2">
+        <h3 class="text-lg font-bold">Mouse Fantech WG12R RAIGOR Gen III Rechargeable Wireless Gaming</h3>
+        <p class="text-sm">2.4GHz Wireless Connection | 2000 DPI Switching | Huano Mute Clicks</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp115.000</p>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/headset_gaming.png" alt="Monitor" class="rounded mb-2">
+        <h3 class="text-lg font-bold">Headset Gaming FLASH HQ53 7.1</h3>
+        <p class="text-sm">7.1 Virtual Surround Sound | Lightweight Design</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp200.000</p>
+      </div>
+
+      <!-- Bundling PC -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+        <img src="assets/monitor_gaming.png" alt="PC Bundle" class="rounded mb-2">
+        <h3 class="text-lg font-bold">LG 24” Gaming Monitor UltraGear™</h3>
+        <p class="text-sm">FHD 180Hz | 1ms MBR | HDR 10</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp2.200.000</p>
+      </div>
+
+      <!-- Bundling Aksesoris -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/bundling_aksesoris.png" alt="Bundling Aksesoris" class="rounded mb-2">
+        <h3 class="text-lg font-bold">Paket Aksesoris Kantor</h3>
+        <p class="text-sm">Keyboard, Mouse, Headset</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp300.000</p>
+      </div>
+
+      <!-- Produk Tambahan (opsional) -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+        <img src="assets/combo_gaming.png" alt="Headset Gaming" class="rounded mb-2">
+        <h3 class="text-lg font-bold">Paket Combo Gaming</h3>
+        <p class="text-sm">Gaming Keyboard Mouse Headset Mousepad</p>
+        <p class="mt-2 font-bold text-cyan-400">Rp550.000</p>
+      </div>
+    </div>
+  </section>
+  
+   <section class="text-center mt-16 mb-10" data-aos="fade-up">
+  <p class="text-lg mb-4 text-gray-200">Lihat produk kami selengkapnya di marketplace:</p>
+
+  <!-- Tombol Tokopedia -->
+  <a href="https://www.tokopedia.com/dynexa-global-technology" target="_blank"
+     class="inline-flex items-center gap-2 px-6 py-3 text-white bg-green-500 hover:bg-green-600 font-semibold rounded-lg shadow-lg transition-all duration-300 ease-in-out mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+      <path d="M3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 .97.757L9.18 5H20a1 1 0 0 1 .9 1.45l-3 6A1 1 0 0 1 17 13H9.5l-1.03 4.12A1 1 0 0 1 7.5 18H4a1 1 0 0 1-1-1V4z" />
+    </svg>
+    <span>Kunjungi Tokopedia Kami</span>
+  </a>
+
+  <p class="text-gray-400 mb-2">atau</p>
+
+  <!-- Tombol WhatsApp -->
+  <a href="https://wa.me/6288229162240" target="_blank"
+     class="inline-flex items-center gap-2 px-6 py-3 text-white bg-emerald-500 hover:bg-emerald-600 font-semibold rounded-lg shadow-lg transition-all duration-300 ease-in-out">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-white" viewBox="0 0 24 24">
+      <path d="M20.52 3.48a11.81 11.81 0 0 0-17.04 0A11.64 11.64 0 0 0 1.65 12c0 1.88.46 3.71 1.34 5.35L1 23l5.8-1.52a11.65 11.65 0 0 0 5.2 1.28 11.63 11.63 0 0 0 8.24-3.42 11.81 11.81 0 0 0 0-17.04zM12 21.05a9.1 9.1 0 0 1-4.64-1.26l-.33-.2-3.45.91.92-3.36-.22-.34A9.11 9.11 0 1 1 12 21.05zm5.05-6.66c-.27-.14-1.63-.8-1.88-.89s-.44-.14-.63.14-.72.89-.88 1.08-.33.21-.6.07a7.45 7.45 0 0 1-2.2-1.35 8.28 8.28 0 0 1-1.53-1.9c-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48s.18-.27.27-.45a.52.52 0 0 0 0-.49c-.07-.14-.63-1.52-.86-2.08-.23-.56-.46-.49-.63-.49h-.54c-.16 0-.42.06-.64.3s-.84.82-.84 2c0 1.18.86 2.32 1 2.48s1.7 2.6 4.12 3.65c.58.25 1.04.4 1.4.52a3.73 3.73 0 0 0 1.52.1c.46-.07 1.42-.58 1.62-1.14s.2-1.04.14-1.14-.25-.17-.52-.3z"/>
+    </svg>
+    <span>Pesan via WhatsApp</span>
+  </a>
+</section>
+
+
+  <footer>
+    &copy; 2025 Dynexa Global Technology. Semua hak dilindungi.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  </script>
+</body>
+</html>

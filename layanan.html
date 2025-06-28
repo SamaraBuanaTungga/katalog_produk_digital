@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Layanan - Dynexa Global Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .glow-tech {
+      font-family: 'Orbitron', sans-serif;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      text-shadow:
+        0 0 2px #00f0ff55,
+        0 0 4px #00f0ff33,
+        0 0 6px #00f0ff22;
+    }
+
+    .service-card {
+      background: rgba(40, 40, 40, 0.7);
+      backdrop-filter: blur(14px);
+      border-radius: 16px;
+      padding: 1.6rem;
+      box-shadow: 0 0 25px rgba(128, 0, 255, 0.2);
+      color: #ddd;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 1px solid rgba(100, 100, 100, 0.3);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.25);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .highlight-bg {
+      background: linear-gradient(to top right, rgba(111, 0, 255, 0.1), rgba(0, 255, 255, 0.05));
+      border-radius: 20px;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black bg-opacity-70 text-white shadow-lg fixed top-0 w-full z-50">
+    <div class="text-xl font-bold glow-tech">Dynexa</div>
+    <ul class="flex space-x-6 text-sm font-semibold">
+      <li><a href="index.html" class="hover:text-cyan-400">Beranda</a></li>
+      <li><a href="layanan.html" class="hover:text-cyan-400">Layanan</a></li>
+      <li><a href="katalog.html" class="hover:text-cyan-400">Katalog</a></li>
+      <li><a href="kontak.html" class="hover:text-cyan-400">Kontak</a></li>
+    </ul>
+  </nav>
+  <div class="pt-20"></div>
+
+  <!-- Judul -->
+  <section class="text-center py-12 px-4" data-aos="fade-down">
+    <h1 class="glow-tech text-4xl md:text-5xl mb-4">Layanan Kami</h1>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">Kami menyediakan jasa pengembangan aplikasi Web, Desktop, dan Mobile sesuai kebutuhan Anda.</p>
+  </section>
+
+  <!-- Daftar Layanan -->
+  <section class="py-10 max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-xl font-semibold mb-2">Aplikasi Website</h3>
+        <p>Website bisnis, toko online, dashboard, dan sistem backend. Responsive dan user-friendly.</p>
+        <p class="mt-4">💼 Estimasi: 50–100 jam</p>
+        <p class="font-bold">💰 Mulai dari Rp75.000 / jam</p>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-semibold mb-2">Aplikasi Desktop</h3>
+        <p>Sistem kasir, inventaris, kepegawaian untuk komputer kantor atau UMKM Anda.</p>
+        <p class="mt-4">💼 Estimasi: 60–120 jam</p>
+        <p class="font-bold">💰 Mulai dari Rp80.000 / jam</p>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-semibold mb-2">Aplikasi Mobile</h3>
+        <p>Aplikasi Android/iOS: edukasi, bisnis, komunitas, dan lainnya. Bisa publish ke Play Store.</p>
+        <p class="mt-4">💼 Estimasi: 70–150 jam</p>
+        <p class="font-bold">💰 Mulai dari Rp85.000 / jam</p>
+      </div>
+    </div>
+
+    <p class="text-center mt-10 text-sm text-gray-400" data-aos="fade-up" data-aos-delay="400">
+      * Biaya berdasarkan waktu pengerjaan. Konsultasi gratis untuk estimasi waktu dan fitur.
+    </p>
+  </section>
+
+  <!-- Portofolio -->
+  <section class="py-16 px-6 max-w-6xl mx-auto highlight-bg" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold text-center mb-10">Portofolio</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+        <img src="assets/web_app_ui.png" alt="Web App" class="rounded mb-2" />
+        <h4 class="font-bold">ToDo List Web App</h4>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+        <img src="assets/desktop_app_ui.png" alt="Desktop App" class="rounded mb-2" />
+        <h4 class="font-bold">Aplikasi Payroll Desktop</h4>
+      </div>
+      <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+        <img src="assets/mobile_app_ui.png" alt="Mobile App" class="rounded mb-2" />
+        <h4 class="font-bold">Aplikasi Kasir Android</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Jasa Aplikasi. Dibuat oleh Tim Dynexa Global Technology.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true,
+      easing: 'ease-in-out',
+    });
+  </script>
+</body>
+</html>
